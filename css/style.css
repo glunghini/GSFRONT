@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -10,7 +10,7 @@ body {
     font-family: 'Reddit Mono', sans-serif;
 }
 
-.headerlanding{
+.headerlanding {
     display: flex;
     position: fixed;
     width: 100%;
@@ -66,12 +66,12 @@ nav li {
     height: 750px;
 }
 
-.title{
+.title {
     height: 100px;
     text-align: center;
 }
 
-.title p{
+.title p {
     font-size: 50px;
 }
 
@@ -81,12 +81,12 @@ nav li {
     margin-top: 120px;
 }
 
-header p{
+header p {
     padding-top: 10px;
     color: black;
 }
 
-.login{
+.login {
     margin-bottom: 10px;
     text-align: center;
     align-items: center;
@@ -96,17 +96,17 @@ header p{
     border-radius: 10px;
 }
 
-.login:hover{
+.login:hover {
     background-color: #c2bfbf;
     transition: 0.5s;
 }
 
-header li:hover{
+header li:hover {
     color: #c2bfbf;
     transition: 0.5s;
 }
 
-.imgsec{
+.imgsec {
     width: 900px;
     margin-top: 10px;
     height: 450px;
@@ -116,10 +116,10 @@ header li:hover{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 10px   ;
+    margin-left: 10px;
 }
 
-.bannner{
+.bannner {
     margin-bottom: 15px;
     width: 100%;
 }
@@ -128,5 +128,93 @@ a {
     text-decoration: none;
 }
 
+.register {
+    width: 800px;
+    height: 500px;
+    background-color: #8ed9ff;
+    margin-top: 100px;
+}
 
+.pagelogin {
+    display: flex;
+    justify-content: space-around;
+}
 
+/* Media Queries */
+
+/* 640x480 */
+@media (max-width: 640px) and (max-height: 480px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .title p {
+        font-size: 30px;
+    }
+    .imgsec {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 800x600 */
+@media (max-width: 800px) and (max-height: 600px) {
+    .container {
+        width: 85%;
+        height: auto;
+    }
+    .title p {
+        font-size: 35px;
+    }
+    .imgsec {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 1024x768 */
+@media (max-width: 1024px) and (max-height: 768px) {
+    .container {
+        width: 80%;
+        height: auto;
+    }
+    .title p {
+        font-size: 40px;
+    }
+    .imgsec {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 1472x1104 */
+@media (max-width: 1472px) and (max-height: 1104px) {
+    .container {
+        width: 75%;
+        height: auto;
+    }
+    .title p {
+        font-size: 45px;
+    }
+    .imgsec {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 1600x1200 */
+@media (max-width: 1600px) and (max-height: 1200px) {
+    .container {
+        width: 70%;
+        height: auto;
+    }
+    .title p {
+        font-size: 50px;
+    }
+    .imgsec {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* não entendi a responsividade mas tentei */
