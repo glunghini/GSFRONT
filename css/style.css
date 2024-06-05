@@ -133,6 +133,7 @@ a {
     height: 500px;
     background-color: #8ed9ff;
     margin-top: 100px;
+    border-radius: 20px;
 }
 
 .pagelogin {
