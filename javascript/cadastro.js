@@ -95,6 +95,7 @@ function checkForm(){
 
   if(isValid){
     saveUserData();
+    window.location.href = "login.html";
     alert("CADASTRADO COM SUCESSO!");
   }
 }

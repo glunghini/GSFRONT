@@ -23,6 +23,8 @@ function logar(event) {
       
       if (login === userData.username && senha === userData.password) {
         alert("Login realizado com sucesso!");
+        localStorage.setItem("isLoggedIn", true);
+        window.location.href = "../index.html";
       } else {
         alert("Login ou senha incorretos.");
       }
@@ -32,4 +34,5 @@ function logar(event) {
   }
   
   document.getElementById("formL").addEventListener("submit", logar);
+  
   
