@@ -1,3 +1,4 @@
+//login
 function logar(){
     var login = document.getElementById('login').value;
     var senha = document.getElementById('senha').value;
@@ -34,5 +35,6 @@ function logar(event) {
   }
   
   document.getElementById("formL").addEventListener("submit", logar);
-  
+
+
   
