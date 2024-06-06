@@ -89,16 +89,25 @@ function checkForm(){
 
   const formItems = form.querySelectorAll(".form-content")
 
-  const isValid = [...formItems].every( (item) => {
+  const isValid = [...formItems].every((item) => {
     return item.className === "form-content"
   });
 
   if(isValid){
-    alert("CADASTRADO COM SUCESSO!")
+    saveUserData();
+    alert("CADASTRADO COM SUCESSO!");
   }
-
 }
 
+function saveUserData() {
+  const userData = {
+    username: username.value,
+    email: email.value,
+    password: password.value
+  };
+
+  localStorage.setItem("userData", JSON.stringify(userData));
+}
 
 function errorInput(input, message){
   const formItem = input.parentElement;
